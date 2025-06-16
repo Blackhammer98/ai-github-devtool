@@ -1,6 +1,7 @@
 import { UserButton } from "@clerk/nextjs";
 
 import { SidebarProvider } from "~/components/ui/sidebar";
+import { AppSidebar } from "./app-sidebar";
 
 
 interface SidebarProps {
@@ -10,7 +11,7 @@ interface SidebarProps {
 const SidebarLayout = ({children}:SidebarProps) => {
     return (
         <SidebarProvider>
-            {/* <AppSidebar/> */}
+            <AppSidebar/>
             <main className="w-full m-2">
                 <div className="flex items-center gap-2 border-sidebar-border bg-sidebar border shadow rounded-md  p-2 px-4">
                    {/* <SearchBar/> */}
